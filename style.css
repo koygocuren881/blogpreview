@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: "Figtree ExtraBold";
+  src: url('assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+  font-weight: 800; /* Adjust based on the font weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree Medium";
+  src: url('assets/fonts/static/Figtree-Medium.ttf') format('truetype');
+  font-weight: 400; /* Adjust based on the font weight */
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4d04e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  max-width: 24rem;
+  min-height: 32.625rem;
+  background-color: #fff;
+  box-shadow: 8px 8px 0px rgba(0, 0, 0, 1); 
+  border-radius: 20px;
+  border: 1px solid black; /* Stroke inside with weight 1px */
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+
+}
+
+.card-image {
+  display: block;
+  height: auto;
+  width: 100%;
+  max-width: 21rem;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-top: 24px;
+}
+
+.card-text {
+  display: inline-block;
+  padding: 10px;
+}
+.text-container {
+  margin-top: 28px;
+  margin-left: 28px;
+  background-color: #f4d04e;
+  border-radius: 4px;
+  padding: 4px 12px 4px 12px;
+  text-align: left;
+  max-width: 100%; /* Ensure it doesn’t exceed the card width */
+  width: fit-content;
+  align-self: flex-start;
+  font-family: "Figtree ExtraBold", sans-serif; /* Use the font here */
+}
+
+.pdate {
+  font-size: 0.875rem;
+  color: #1f314f;
+  line-height: 150%;
+  margin-top: 12px;
+  margin-left: 28px;
+  text-align: left;
+  max-width: 100%; /* Ensure it doesn’t exceed the card width */
+  width: fit-content;
+  align-self: flex-start;
+  font-family: "Figtree Medium", sans-serif;
+}
+
+.ptitle {
+  font-size: 1.5rem;
+  color: #1f314f;
+
+  margin-top: 12px;
+  margin-left: 28px;
+  text-align: left;
+  max-width: 100%; /* Ensure it doesn’t exceed the card width */
+  width: fit-content;
+  align-self: flex-start;
+  font-family: "Figtree ExtraBold", sans-serif;
+}
+
+
+.ptitle:hover {
+    color: #f4d04e; /* Change color on hover */
+  }
+.pdesc {
+  font-size: 1rem;
+  line-height: 150%;
+  color: #6b6b6b;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  margin-left: 28px;
+  text-align: left;
+  max-width: 100%; /* Ensure it doesn’t exceed the card width */
+  width: fit-content;
+  align-self: flex-start;
+  font-family: "Figtree Medium", sans-serif;
+}
+
+.row-container {
+  margin-top: 12px;
+    display: flex; /* Places items in a row */
+  align-items: center; /* Aligns text and image vertically */
+  justify-content: flex-start; /* Ensures items are aligned to the left */
+  gap: 10px; /* Adds spacing between image and text */
+  width: 100%; /* Ensures the container spans full width */
+}
+
+.row-image {
+  max-width: 2rem; /* Adjust image size */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 28px; /* Adds space between image and text */
+  margin-right: 8px;
+}
+
+.row-text {
+  font-size: 0.875rem; /* 14px */
+  font-family: "Figtree ExtraBold", sans-serif;
+  font-weight: bold;
+
+  color: #111111;
+}
+
+/* .attribution {
+  font-size: 0.75rem;
+  color: #6b6b6b;
+botto  margin-left: 28px;
+  text-align: center;
+  width: fit-content;
+  align-self: flex-start;
+  font-family: "Figtree Medium", sans-serif;
+}
+ */
